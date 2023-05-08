@@ -1,3 +1,5 @@
+package base
+
 fun main(args: Array<String>) {
     printNames("Идель")
     printNames("Иҙел", "Idel")

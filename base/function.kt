@@ -1,3 +1,5 @@
+package base
+
 fun main(args: Array<String>) {
     println(getLangV1("Иҙел"))
     println(getLangV2("Idel"))

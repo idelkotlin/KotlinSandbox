@@ -1,3 +1,5 @@
+package base
+
 fun main(args: Array<String>) {
     print("Введите имя: ")
     val name = readLine()

@@ -1,3 +1,5 @@
+package base
+
 fun main(args: Array<String>) {
     // I вариант
     val names1: List<String>

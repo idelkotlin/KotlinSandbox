@@ -1,3 +1,5 @@
+package base
+
 fun main(args: Array<String>) {
     val names = mutableListOf<String>("Идель", "Idel", "Иҙел")
     names.add("Izel")
