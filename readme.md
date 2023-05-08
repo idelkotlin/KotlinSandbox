@@ -20,3 +20,10 @@
 16. [functional.kt](functional.kt)
 17. [flatMap.kt](flatMap.kt)
 18. [combine.kt](combine.kt)
+
+## ООП
+
+1. [constructors.kt](oop/constructors.kt)
+2. [initializations.kt](oop/initializations.kt)
+3. [lateinit.kt](oop/lateinit.kt)
+4. [lazyinit.kt](oop/lazyinit.kt)
