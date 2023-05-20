@@ -1,5 +1,7 @@
 # Изучение Kotlin
 
+О процессе изучения можно наблюдать на канале ["Изучаю Kotlin. My way"](https://t.me/idelkotlin).
+
 ## Базовый синтаксис
 
 1. [ifelse.kt](base/ifelse.kt)
@@ -27,3 +29,6 @@
 2. [initializations.kt](oop/initializations.kt)
 3. [lateinit.kt](oop/lateinit.kt)
 4. [lazyinit.kt](oop/lazyinit.kt)
+5. [oop/inheritance](oop/inheritance)
+6. [interface.kt](oop/interface.kt)
+7. [equals.kt](oop/equals.kt)
