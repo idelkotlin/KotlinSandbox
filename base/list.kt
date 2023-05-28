@@ -22,23 +22,32 @@ fun main(args: Array<String>) {
     println("// проверка существования элемента")
     println(names1.contains("Идель"))
     println(names1.containsAll(listOf("Идель", "Idel")))
+    if (names1.contains("Idel")) {
+        println("Индекс значения Idel = ${names1.indexOf("Idel")}")
+    }
 
     println("// изменияющийся список")
     val names3 = names1.toMutableList()
     names3.add(0, "Иҙел")
+    // удаление "Идель"
+    names3.remove("Идель")
+    // удаление второго элемента
+    names3.removeAt(1)
+    // замена первого элемента
+    names3.set(0, "Idel")
     println(names3)
 
     println("// перебор элементов")
-    for (name in names3) {
+    for (name in names1) {
         println(name)
     }
-    for (i in names3.size-1 downTo 0 step 2) {
-        println(names3[i])
+    for (i in names1.size-1 downTo 0 step 2) {
+        println(names1[i])
     }
-    names3.forEach {
+    names1.forEach {
         println(it)
     }
-    names3.forEachIndexed { index, name ->
+    names1.forEachIndexed { index, name ->
         println("${index+1} => $name")
     }
 }

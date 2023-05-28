@@ -1,13 +1,17 @@
 package base
 
-import java.lang.Exception
+import kotlin.Exception
 
 fun main(args: Array<String>) {
     try {
         println(getLang("Иҙел1"))
     } catch (e: Exception) {
         println(e.message)
+    } finally {
+        println("Выполняется всегда")
     }
+
+    println(try { "4.2".toInt() } catch (e: Exception) { null })
 }
 
 private fun getLang(name: String): String {

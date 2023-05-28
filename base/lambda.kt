@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
             "Идель" -> "Русский"
             "Idel" -> "Английский"
             "Иҙел" -> "Башҡортса"
-            else -> "Нет понятий"
+            else -> "Без понятий"
         }
     }
 
@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
             "Идель" -> "Русский"
             "Idel" -> "Английский"
             "Иҙел" -> "Башҡортса"
-            else -> "Нет понятий"
+            else -> "Без понятий"
         }
     }
 
@@ -32,9 +32,22 @@ fun main(args: Array<String>) {
             "Идель" -> "Русский"
             "Idel" -> "Английский"
             "Иҙел" -> "Башҡортса"
-            else -> "Нет понятий"
+            else -> "Без понятий"
         }
     }
 
     println(getLang3("Иҙел"))
+
+    println("// передача лямда-выражения в функцию")
+    val names = listOf("Idel", "Иҙел", "Esperanto")
+    printCollection(names) {
+        getLang1(it)
+    }
+}
+
+
+fun printCollection(list: List<String>, f: (String) -> String) {
+    list.forEach {
+        println("$it -> ${f(it)}")
+    }
 }
